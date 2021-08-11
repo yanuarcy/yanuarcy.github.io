@@ -1,0 +1,401 @@
+html {
+    position: relative;
+}
+
+body {
+    height: 400px;
+    width: 100%;
+}
+
+
+/* ================================= */
+/* ======= Desktop Version ========= */
+@media (min-width: 992px) {
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -165px !important;
+        background-position: 0 -580px !important;
+        
+    }
+
+    .komponen {
+        margin-top: 120px !important;
+    }
+
+    .jumbotron img {
+        width: 200px !important;
+        height: 200px !important;
+        border: solid #eee !important;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5) !important;
+        
+    }
+    
+    .jumbotron h1 {
+        font-size: 60px !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7) !important;
+    }
+
+    .jumbotron p {
+        font-size: 28px !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7) !important;
+    }
+    
+    .asdjkl svg {
+        width: 50px !important;
+        height: 25px !important;
+        color: white !important;
+    }
+    
+    .lkjdsa svg {
+        width: 50px !important;
+        height: 25px !important;
+        color: white !important;
+    }
+
+    .logomsword img {
+        height: 30px !important;
+        width: 120px !important;
+    }
+    
+    .logomspoint img {
+        margin-top: 47px !important;
+        height: 30px !important;
+        width: 120px !important;
+    }
+    
+    .logomsexcel img {
+        margin-top: 47px !important;
+        height: 30px !important;
+        width: 120px !important;
+    }
+    
+    .logoadobeps img {
+        height: 40px !important;
+        width: 130px !important;
+    }
+    
+    .logoadobeid img {
+        margin-top: 40px !important;
+        height: 32px !important;
+        width: 130px !important;
+    }
+    
+    .logoadobepp img {
+        margin-top: 38px !important;
+        height: 42px !important;
+        width: 130px !important;
+    }
+
+    .PremierPro {
+        padding-top: 0 !important;
+    }
+
+ }
+/* =============================================== */
+/* =============================================== */
+
+
+.navbar {
+    z-index: 1;
+    position: relative;
+    margin-top: -60px;
+}
+
+.navbar-brand {
+    font-family: Acme;
+    font-size: 40px;
+}
+
+.komponen {
+    margin-top: 150px;
+}
+
+.jumbotron {
+    height: 700px;
+    background-image: url('img/bgPortfolio2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -900px;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+    margin-top: -60px;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.4));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron img {
+    width: 100px;
+    height: 100px;
+    border: solid #eee;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    
+}
+
+.jumbotron h1 {
+    font-family: Questrial;
+    font-size: 45px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron p {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.asdjkl svg {
+    width: 25px;
+    height: 20px;
+    color: white;
+}
+
+.lkjdsa svg {
+    width: 25px;
+    height: 20px;
+    color: white;
+}
+
+.asdjkl:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0B63DC;
+    width: 20%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+        
+}
+
+.lkjdsa:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0B63DC;
+    width: 20%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.blockquote .hllo span {
+    font-weight: 500;
+    font-size: 45px;
+    
+}
+
+.blockquote li {
+    font-size: 20px;
+}
+
+hr {
+    width: 300px;
+    border-top: 3px solid rgb(26, 24, 24);
+}
+
+.card hr {
+    width: 225px;
+    border-top: 2px solid rgb(109, 104, 104);
+}
+
+section {
+    min-height: 500px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.skill {
+    background-color: rgb(230, 213, 185);
+}
+
+footer {
+    padding-top: 13px;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer p svg {
+    color: salmon;
+}
+
+.portfolio {
+    background-image: url('img/bgPt1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.portfolio h2 {
+    color: rgb(0, 0, 0);
+}
+
+
+/* parallax */
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/* parallax */
+
+
+ul svg {
+    width: 50px;
+    height: 25px;
+    color: black;
+}
+
+/* logo Software Skills */
+.star {
+    margin-top: -28px;
+    margin-bottom: 23px;
+    color: rgb(255, 238, 0);
+}
+
+.star2 {
+    color: black;
+}
+
+.logomsword img {
+    height: 30px;
+    width: 60px;
+}
+
+.logomspoint img {
+    margin-top: 47px;
+    height: 30px;
+    width: 60px;
+}
+
+.logomsexcel img {
+    margin-top: 73px;
+    height: 30px;
+    width: 60px;
+}
+
+.logoadobeps img {
+    height: 40px;
+    width: 40px;
+}
+
+.logoadobeid img {
+    margin-top: 40px;
+    height: 32px;
+    width: 40px;
+}
+
+.logoadobepp img {
+    margin-top: 67px;
+    height: 42px;
+    width: 40px;
+}
+
+.PremierPro {
+    padding-top: 30px;
+}
+
+/* parallax */
+.jAwal {
+    opacity: 0;
+    transform: translate(0 0);
+    transition: 2.5s;
+}
+
+.jAwal.jMuncul {
+    opacity: 1;
+    transform: translate(0 0);
+}
+
+.jKiri, .jKanan {
+	opacity: 0;
+	transform: translate(-50px,0);
+	transition: 2.5s;
+}
+
+
+.jKanan {
+	transform: translate(50px,0);
+}
+
+.jKiri.jMuncul, .jKanan.jMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.about .pKiri {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.about .pKiri.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.skill .pKanan {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.skill .pKanan.Muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/* parallax */
+
+/* buttonscroll */
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 3%;
+    height: 6%;
+    background: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+/* buttonscroll */
