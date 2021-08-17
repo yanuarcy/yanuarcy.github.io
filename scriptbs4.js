@@ -46,6 +46,9 @@ $(window).on('load', function() {
 	$('.jAwal').addClass('jMuncul');
 	$('.jKiri').addClass('jMuncul');
 	$('.jKanan').addClass('jMuncul');
+	$('.SvgKiri').addClass('SvgMuncul');
+	$('.SvgTengah').addClass('SvgMuncul');
+	$('.SvgKanan').addClass('SvgMuncul');
 });
 // akhir jumbotron load
 
@@ -67,7 +70,7 @@ $(window).scroll(function() {
 	});
 
 	$('.jumbotron svg').css({
-		'transform' : 'translate(0px, '+ wScroll/1.3 +'%)'
+		'transform' : 'translate(0px, '+ wScroll/1.1 +'%)'
 	});
 });
 

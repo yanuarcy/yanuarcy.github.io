@@ -209,6 +209,16 @@ body {
     margin-bottom: -8px;
 }
 
+.github:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0B63DC;
+    width: 20%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
 .blockquote .hllo span {
     font-weight: 500;
     font-size: 45px;
@@ -229,6 +239,15 @@ hr {
     border-top: 2px solid rgb(109, 104, 104);
 }
 
+.list-unstyled a {
+    color: rgb(16, 171, 209);
+    text-decoration: none;
+}
+
+.list-unstyled a:hover {
+    color: salmon;
+}
+
 section {
     min-height: 500px;
     padding-top: 50px;
@@ -242,6 +261,7 @@ section {
 footer {
     padding-top: 13px;
     margin-top: 50px;
+    margin-bottom: -30px;
     bottom: 0;
 }
 
@@ -263,6 +283,22 @@ footer p svg {
     color: rgb(0, 0, 0);
 }
 
+.card-body a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: salmon;
+}
+
+.ecommerce img {
+    height: 230px;
+}
+
+.Responsive-Login img {
+    height: 230px;
+}
 
 /* parallax */
 .portfolio .thumbnail {
@@ -332,6 +368,8 @@ ul svg {
 .PremierPro {
     padding-top: 30px;
 }
+/* logo software skills */
+
 
 /* parallax */
 .jAwal {
@@ -345,12 +383,40 @@ ul svg {
     transform: translate(0 0);
 }
 
+.SvgKiri {
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: 2.5s;
+}
+
+.SvgTengah {
+    opacity: 0;
+    transform: translate(0,50px);
+    transition: 2.5s;
+}
+
+.SvgKanan {
+    opacity: 0;
+    transform: translate(50px,0);
+    transition: 2.5s;
+}
+
+.SvgKanan.SvgMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.SvgKiri.SvgMuncul, .SvgTengah.SvgMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
 .jKiri, .jKanan {
 	opacity: 0;
 	transform: translate(-50px,0);
 	transition: 2.5s;
 }
-
 
 .jKanan {
 	transform: translate(50px,0);
