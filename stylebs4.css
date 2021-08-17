@@ -464,4 +464,23 @@ ul svg {
     cursor: pointer;
     display: none;
 }
+
+@media (min-width: 576px) {
+    #topBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        font-size: 22px;
+        width: 10%;
+        height: 6%;
+        background: #000000;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+
+
 /* buttonscroll */
