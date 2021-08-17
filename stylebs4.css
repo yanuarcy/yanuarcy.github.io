@@ -456,7 +456,7 @@ ul svg {
     bottom: 40px;
     right: 40px;
     font-size: 22px;
-    width: 3%;
+    width: 3% !important;
     height: 6%;
     background: #000000;
     color: white;
@@ -469,7 +469,7 @@ ul svg {
     #topBtn {
         position: fixed;
         bottom: 40px;
-        right: 20px;
+        right: 40px;
         font-size: 22px;
         width: 10%;
         height: 6%;
