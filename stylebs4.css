@@ -484,3 +484,12 @@ ul svg {
 
 
 /* buttonscroll */
+
+.owner a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.owner a:hover {
+    color: salmon;
+}
