@@ -545,3 +545,12 @@ transform: scale(0.95);
 from { transform: translateY(0.1em); }
 to { transform: translateY(-0.1em); }
 }
+
+#preloader {
+    background: #000 url(img/PreLoader.gif) no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}

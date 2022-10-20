@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 0;
+    outline: none;
+    user-select: none;
 }
 
 body{
@@ -87,7 +90,7 @@ form h2 {
     color:black;
 }
 
-.input-div.focus div h5 {
+.input-div.focus div label {
     top: -5px;
     font-size: 15px;
 }
@@ -120,7 +123,7 @@ form h2 {
     height: 45px;
 }
 
-.input-div > div h5 {
+.input-div > div label {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -175,6 +178,7 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     background-size: 200%;
     transition: .5s;
+    text-align: center;
 }
 
 .btn:hover {
@@ -217,5 +221,111 @@ a:hover {
 
     .login-container {
         justify-content: center;
+    }
+}
+
+/* .spinner {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.spinner::before, 
+.spinner:after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+.spinner::before {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 0deg, #ff00cc 0%, #333399 100%);
+    animation: spin .5s infinite linear;
+}
+
+.spinner:after {
+    width: 85%;
+    height: 85%;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+/* div {
+    height: 25px;
+} */
+
+/* .load { */
+    /* position: relative; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%);
+    width: 40%;
+    margin: 20%;
+    border: 3px solid #54E6E7;
+    background-color: #AAc6c6;
+    box-shadow: 0px 0px 15px #AAc6c6; */
+/* } */
+
+/* .progess {
+    width: 0%;
+    background-color: #1A2929;
+    opacity: 0.8;
+    animation: progess 2s infinite alternate;
+} */
+
+/* @keyframes progess {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+} */
+
+#preloader {
+    background: #000 url(Loader.gif) no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#loader {
+    background: #000 url(img/Loader.gif) no-repeat center center;
+    background-size: 450px;
+    height: 10vh;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    margin-left: 4%;
+}
+
+.value {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    animation: muter 1s ease infinite;
+}
+
+@keyframes muter {
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
     }
 }

@@ -43,12 +43,16 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 // jumbotron load
 $(window).on('load', function() {
-	$('.jAwal').addClass('jMuncul');
-	$('.jKiri').addClass('jMuncul');
-	$('.jKanan').addClass('jMuncul');
-	$('.SvgKiri').addClass('SvgMuncul');
-	$('.SvgTengah').addClass('SvgMuncul');
-	$('.SvgKanan').addClass('SvgMuncul');
+	var delay = 2100
+	// loadJ.style.display = "none";
+	setTimeout(function(){
+		$('.jAwal').addClass('jMuncul') ;
+		$('.jKiri').addClass('jMuncul') ;
+		$('.jKanan').addClass('jMuncul') ;
+		$('.SvgKiri').addClass('SvgMuncul') ;
+		$('.SvgTengah').addClass('SvgMuncul') ;
+		$('.SvgKanan').addClass('SvgMuncul');
+    }, delay)
 });
 // akhir jumbotron load
 
@@ -153,3 +157,15 @@ $(document).ready(function(){
 
 });
 // buttonscroll
+
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    var delay = 2000;
+
+    setTimeout(function(){
+        loader.style.display = "none";
+    }, delay)
+})
+
