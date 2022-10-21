@@ -159,6 +159,7 @@ $(document).ready(function(){
 // buttonscroll
 
 
+// Preloader
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function(){
@@ -168,4 +169,23 @@ window.addEventListener("load", function(){
         loader.style.display = "none";
     }, delay)
 })
+// Akhir Preloader
 
+function sendEmail(){
+	Email.send({
+		SecureToken : "b850768e-37b2-4d5d-ad4e-a9f2092e1c6b",
+		Host : "smtp.elasticemail.com",
+		Username : "yanuarcahyo567@gmail.com",
+		Password : "D0F4051BCEE52BAC93E685E8EEEAD96C21CB",
+		To : 'yanuarcahyo567@gmail.com',
+		From : 'yanuarcahyo567@gmail.com',
+		// ReplyTo : document.getElementById("email").value,
+		Subject : "You got new email, Please check this one",
+		Body : "Nama : " + document.getElementById("nama").value
+				+ "<br> Email : " + document.getElementById("email").value
+				+ "<br> No Telp : " + document.getElementById("telp").value
+				+ "<br> Pesan : " + document.getElementById("pesan").value
+	}).then(
+	message => alert("Pesan Berhasil Di Kirim, Silahkan Tunggu Balasan. Terimakasih Sudah Mengirim Pesan")
+	);
+}
